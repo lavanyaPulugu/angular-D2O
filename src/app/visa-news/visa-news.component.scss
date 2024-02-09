@@ -1,0 +1,80 @@
+.visadiv {
+  position: relative;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+
+  .visaimg {
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .imgdiv {
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    color: white;
+    font-weight: bold;
+  }
+}
+.outerdiv {
+  display: grid;
+  grid-gap: 50px;
+  background-color: #eadedecf;
+  //height: 500px;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  .row {
+    /* border-radius: 20px;*/
+    .col {
+      flex: 0 0 auto;
+      /* width: 100%;
+           border-radius: 10px;*/
+      padding: 50px;
+    }
+  }
+}
+
+/*.idiv {
+  position: relative;
+  height: 200px;
+  width: 700px;
+  margin-left: 290px;
+  margin-top: 10px;
+  opacity: 0.5;
+
+  cursor: pointer;
+
+  .iframe1 {
+    position: absolute;
+    height: 200px;
+    width: 700px;
+    pointer-events: none;
+  }
+}*/
+
+.row1 {
+  height: 300px;
+  margin-top: 100px;
+  .col1 {
+    width: 60%;
+  }
+  .col2 {
+    width: 10%;
+  }
+  .col3 {
+    width: 30%;
+
+    cursor: pointer;
+
+    .iframe1 {
+      width: auto;
+      pointer-events: none;
+    }
+  }
+}

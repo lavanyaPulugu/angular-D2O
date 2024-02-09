@@ -1,0 +1,61 @@
+
+       <div class="container maindiv">
+            <div class="row justify-content-center">
+                <div class="col-md-6 innerdiv1">
+                    <h2 class="text-center">Login</h2>
+                    <form >
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" minlength="8" id="username" placeholder="Enter your username"  ngModel name="uname" #un="ngModel"><br>
+                        <p class=" text-danger error" *ngIf="un.touched && un.errors?.['minlength']"> please enter valid username</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" minlength="8" placeholder="Enter your password" ngModel name="password" #pw="ngModel" ><br>
+                            <p class=" text-danger error" *ngIf="pw.touched && pw.errors?.['minlength']"> please enter valid username</p>
+                        </div>
+                        <div class=" pull-right">
+                            <a href="#" style="text-decoration: underline;">Forget Password</a><br>
+                        </div><br>
+                        <button type="submit" class="btn btn-primary btn-block" (click)="show()">Login</button>
+                       
+                    </form>
+                    </div>
+    <div class="col-md-6 innerdiv2">
+        <h2 class="text-center">Sign Up</h2>
+        <form >
+            <div class="form-group">
+                <label for="Name">Name</label>
+                <input type="text" class="form-control" minlength="5" id="name" placeholder="Enter your name" ngModel name="name" #nm="ngModel"><br>
+                <p class=" text-danger error" *ngIf="nm.touched && nm.errors?.['minlength']"> please enter valid username</p>
+              
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email"  ngModel name="email" #em="ngModel"><br>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password"   ><br>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" ><br>
+            </div>
+            <div>
+                <input type="checkbox" class="form-check-label">
+                <label class="form-check-label" for="flexcheck"></label>
+                I Accept the <a style="text-decoration: underline;" href="#">Tearms and Conditions</a>
+            </div><br>
+            <button type="submit" class="btn btn-primary btn-block" >Sign Up</button>
+        </form>
+    </div>
+        </div>
+
+
+
+
+
+
+
+
